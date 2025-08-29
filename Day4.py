@@ -56,8 +56,9 @@ plt.tight_layout()
 plt.savefig("pie.png", dpi=150)
 plt.show()
 
-# Print insights for LinkedIn post
+""" Print insights for LinkedIn post
 print("\n📊 Insights:")
 print(f"Total screen time in the week: {total:.0f} minutes (~{total/60:.1f} hours)")
 print(f"Day with highest usage: {df.loc[df['Total'].idxmax(), 'Day']} ({df['Total'].max()} minutes)")
 print(f"Most used app: {weekly_avg.idxmax()} ({weekly_avg.max():.1f} minutes per day on average)")
+"""
